@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
+import Gallery from '@/components/sections/Gallery';
 import Contact from '@/components/sections/Contact';
 import FloatingButton from '@/components/ui/FloatingButton';
 import { motion } from 'framer-motion';
@@ -46,10 +47,11 @@ const Index = () => {
       className="overflow-hidden"
     >
       <Header />
-      <main className="space-y-0"> {/* Removed spacing between sections */}
+      <main className="space-y-0">
         <Hero />
         <About />
         <Services />
+        <Gallery />
         <Contact />
       </main>
       <FloatingButton />
