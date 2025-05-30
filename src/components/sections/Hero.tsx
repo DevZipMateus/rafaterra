@@ -50,6 +50,19 @@ const Hero = () => {
 
       <div className="section-container relative z-10 flex flex-col items-center text-center px-4">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-8"
+        >
+          <img 
+            src="/lovable-uploads/327fff30-053b-4760-a994-fa5b3cb7d5c9.png" 
+            alt="RAFA TERRA" 
+            className="h-24 w-24 md:h-32 md:w-32 mx-auto drop-shadow-2xl"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
