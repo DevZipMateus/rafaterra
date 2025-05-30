@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -26,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-4">
               <a 
-                href="https://www.instagram.com/rafa_terra.terraplagem" 
+                href="https://www.instagram.com/rafa_terra.terraplanagem?igsh=MXM4MGkzeTBmOWI1eg%3D%3D" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200" 

@@ -1,6 +1,6 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Instagram } from 'lucide-react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -90,7 +90,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16"
+          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -100,6 +100,15 @@ const Hero = () => {
           </a>
           <a href="#services" className="btn-secondary bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
             Conheça Nossos Serviços
+          </a>
+          <a 
+            href="https://www.instagram.com/rafa_terra.terraplanagem?igsh=MXM4MGkzeTBmOWI1eg%3D%3D" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary bg-gradient-to-r from-purple-500 to-pink-500 text-white border-none hover:from-purple-600 hover:to-pink-600 flex items-center justify-center space-x-2"
+          >
+            <Instagram size={20} />
+            <span>Siga no Instagram</span>
           </a>
         </motion.div>
 
