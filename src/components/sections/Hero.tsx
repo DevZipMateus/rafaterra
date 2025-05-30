@@ -33,12 +33,18 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-slate-50 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       id="home"
     >
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-slate-50/95"></div>
-        <div className="absolute inset-0 opacity-40 bg-[url('/images/pattern.svg')] bg-repeat"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/a4099a76-544c-43aa-8a7f-f02c971f2113.png')`
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-black/60"></div>
       </div>
 
       <div className="section-container relative z-10 flex flex-col items-center text-center px-4">
@@ -47,13 +53,13 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
+          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-300 bg-blue-900/30 backdrop-blur-sm rounded-full border border-blue-400/30">
             Mais de 6 anos no mercado
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-5xl"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-5xl text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -63,7 +69,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-slate-600 max-w-3xl mb-4"
+          className="text-lg md:text-xl text-gray-200 max-w-3xl mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -78,7 +84,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          <p className="text-base md:text-lg font-medium text-blue-600 italic">
+          <p className="text-base md:text-lg font-medium text-blue-300 italic">
             "Seriedade, qualidade e Comprometimento... Se Deus é por nós quem será contra nós"
           </p>
         </motion.div>
@@ -92,7 +98,7 @@ const Hero = () => {
           <a href="#contact" className="btn-primary">
             Solicitar Orçamento
           </a>
-          <a href="#services" className="btn-secondary">
+          <a href="#services" className="btn-secondary bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
             Conheça Nossos Serviços
           </a>
         </motion.div>
@@ -103,10 +109,10 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center p-1">
-            <div className="w-1.5 h-3 bg-slate-400 rounded-full animate-bounce"></div>
+          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center p-1">
+            <div className="w-1.5 h-3 bg-white/60 rounded-full animate-bounce"></div>
           </div>
-          <span className="text-sm text-slate-500 mt-2">Role para baixo</span>
+          <span className="text-sm text-white/80 mt-2">Role para baixo</span>
         </motion.div>
       </div>
     </section>
