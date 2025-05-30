@@ -7,9 +7,9 @@
 
 @layer base {
   :root {
-    /* Paleta de cores: Azul, preto e branco */
+    /* Paleta de cores baseada na nova logo: Teal e azul */
     --primary-color: 255 255 255; /* Branco - 60% */
-    --secondary-color: 0 135 255; /* Azul - 30% */
+    --secondary-color: 20 184 166; /* Teal 500 - 30% */
     --accent-color: 15 23 42; /* Preto/Slate 900 - 10% */
     
     --background: var(--primary-color);
@@ -38,7 +38,7 @@
 
     --border: 226 29% 91%;
     --input: 226 29% 91%;
-    --ring: 15 23 42;
+    --ring: 20 184 166;
 
     --radius: 0.75rem;
 
@@ -49,7 +49,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 20 184 166;
   }
 
   .dark {
@@ -79,16 +79,16 @@
 
     --border: 30 41 59;
     --input: 30 41 59;
-    --ring: 0 135 255;
+    --ring: 20 184 166;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary: 20 184 166;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 20 184 166;
   }
 }
 
@@ -122,7 +122,7 @@
   }
   
   .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200;
   }
   
   .btn-secondary {
@@ -134,20 +134,20 @@
   }
   
   .nav-link {
-    @apply relative px-3 py-2 text-slate-700 hover:text-blue-500 transition-colors duration-200 font-medium;
+    @apply relative px-3 py-2 text-slate-700 hover:text-teal-500 transition-colors duration-200 font-medium;
   }
   
   .nav-link-active {
-    @apply text-blue-500 font-semibold;
+    @apply text-teal-500 font-semibold;
   }
   
   .nav-link-active::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 rounded-full;
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-teal-500 rounded-full;
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-blue;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500;
   }
   
   /* WhatsApp floating button animations */

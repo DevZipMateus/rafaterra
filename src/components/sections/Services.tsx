@@ -30,32 +30,32 @@ const Services = () => {
 
   const services = [
     {
-      icon: <Wrench className="h-8 w-8 text-blue-500" />,
+      icon: <Wrench className="h-8 w-8 text-teal-500" />,
       title: 'Demolição',
       description: 'Serviços de demolição com equipamentos especializados e técnicas seguras para todos os tipos de estruturas.'
     },
     {
-      icon: <Mountain className="h-8 w-8 text-blue-500" />,
+      icon: <Mountain className="h-8 w-8 text-teal-500" />,
       title: 'Terraplanagem',
       description: 'Movimentação e nivelamento de terra com equipamentos de última geração para preparação de terrenos.'
     },
     {
-      icon: <TreePine className="h-8 w-8 text-blue-500" />,
+      icon: <TreePine className="h-8 w-8 text-teal-500" />,
       title: 'Limpeza de Terreno',
       description: 'Limpeza completa de terrenos, remoção de vegetação e preparação para construção ou plantio.'
     },
     {
-      icon: <Shovel className="h-8 w-8 text-blue-500" />,
+      icon: <Shovel className="h-8 w-8 text-teal-500" />,
       title: 'Aterro e Desaterro',
       description: 'Serviços de aterro e desaterro para nivelamento e preparação de terrenos conforme projeto.'
     },
     {
-      icon: <Drill className="h-8 w-8 text-blue-500" />,
+      icon: <Drill className="h-8 w-8 text-teal-500" />,
       title: 'Abertura de Tanques',
       description: 'Escavação e abertura de tanques para diversos fins com precisão e segurança.'
     },
     {
-      icon: <Truck className="h-8 w-8 text-blue-500" />,
+      icon: <Truck className="h-8 w-8 text-teal-500" />,
       title: 'Transporte e Locação',
       description: 'Caminhões caçamba, mini carregadeira (Bobcat), retroescavadeira e outros equipamentos para locação.'
     }
@@ -70,7 +70,7 @@ const Services = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
+          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-teal-600 bg-teal-100 rounded-full">
             Nossos Serviços
           </div>
           <h2 className="section-title">Soluções Completas em Terraplanagem</h2>
@@ -89,7 +89,7 @@ const Services = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.1 }}
             >
-              <div className="mb-4 bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center">
+              <div className="mb-4 bg-teal-50 w-16 h-16 rounded-lg flex items-center justify-center">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>

@@ -1,3 +1,4 @@
+
 import { Mail, MapPin, Phone, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
             <div className="mb-6">
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/lovable-uploads/5f5dba8d-2dcf-409c-8ad2-80de4c84d2ad.png" 
+                  src="/lovable-uploads/327fff30-053b-4760-a994-fa5b3cb7d5c9.png" 
                   alt="RAFA TERRA" 
                   className="h-12 w-auto object-contain"
                 />
@@ -28,7 +29,7 @@ const Footer = () => {
                 href="https://www.instagram.com/rafa_terra.terraplanagem?igsh=MXM4MGkzeTBmOWI1eg%3D%3D" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-200" 
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-teal-600 hover:bg-teal-700 transition-colors duration-200" 
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
@@ -59,17 +60,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Entre em Contato</h4>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="mr-2 h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <MapPin className="mr-2 h-5 w-5 text-teal-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300">Avenida Comendador Daniel Pacífico</span>
               </div>
               <div className="flex items-center">
-                <Phone className="mr-2 h-5 w-5 text-blue-400 flex-shrink-0" />
+                <Phone className="mr-2 h-5 w-5 text-teal-400 flex-shrink-0" />
                 <a href="tel:+5514997137726" className="text-slate-300 hover:text-white transition-colors duration-200">
                   (14) 99713-7726
                 </a>
               </div>
               <div className="flex items-center">
-                <Mail className="mr-2 h-5 w-5 text-blue-400 flex-shrink-0" />
+                <Mail className="mr-2 h-5 w-5 text-teal-400 flex-shrink-0" />
                 <a href="mailto:rafaelheleno433@gmail.com" className="text-slate-300 hover:text-white transition-colors duration-200 break-all">
                   rafaelheleno433@gmail.com
                 </a>

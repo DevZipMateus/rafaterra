@@ -63,7 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Paleta personalizada: Azul, preto e branco
+				// Paleta personalizada: Teal, azul, preto e branco
+				teal: {
+					50: '#f0fdfa',
+					100: '#ccfbf1',
+					200: '#99f6e4',
+					300: '#5eead4',
+					400: '#2dd4bf',
+					500: '#14b8a6',
+					600: '#0d9488',
+					700: '#0f766e',
+					800: '#115e59',
+					900: '#134e4a',
+				},
 				blue: {
 					50: '#E6F3FF',
 					100: '#CCE7FF',
@@ -159,7 +171,7 @@ export default {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/images/hero-bg.jpg')",
-				'gradient-blue': 'linear-gradient(45deg, #0087FF 0%, #339FFF 100%)',
+				'gradient-teal': 'linear-gradient(45deg, #14b8a6 0%, #0d9488 100%)',
 			}
 		}
 	},

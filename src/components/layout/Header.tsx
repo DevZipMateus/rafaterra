@@ -35,7 +35,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/5f5dba8d-2dcf-409c-8ad2-80de4c84d2ad.png" 
+              src="/lovable-uploads/327fff30-053b-4760-a994-fa5b3cb7d5c9.png" 
               alt="RAFA TERRA" 
               className="h-10 w-10 md:h-12 md:w-12"
             />
@@ -48,7 +48,7 @@ const Header = () => {
               </h1>
               <p className={cn(
                 'text-xs md:text-sm transition-colors duration-300',
-                isScrolled ? 'text-slate-600' : 'text-blue-100'
+                isScrolled ? 'text-slate-600' : 'text-teal-100'
               )}>
                 Terraplanagem e Transporte
               </p>
@@ -64,8 +64,8 @@ const Header = () => {
                 className={cn(
                   'nav-link transition-colors duration-300',
                   isScrolled 
-                    ? 'text-slate-700 hover:text-blue-600' 
-                    : 'text-white hover:text-blue-200'
+                    ? 'text-slate-700 hover:text-teal-600' 
+                    : 'text-white hover:text-teal-200'
                 )}
               >
                 {item.label}
