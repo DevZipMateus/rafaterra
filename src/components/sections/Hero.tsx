@@ -58,7 +58,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/327fff30-053b-4760-a994-fa5b3cb7d5c9.png" 
             alt="RAFA TERRA" 
-            className="h-24 w-24 md:h-32 md:w-32 mx-auto drop-shadow-2xl"
+            className="h-40 w-40 md:h-48 md:w-48 lg:h-56 lg:w-56 mx-auto drop-shadow-2xl"
           />
         </motion.div>
 
