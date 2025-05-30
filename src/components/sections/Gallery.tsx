@@ -69,6 +69,51 @@ const Gallery = () => {
       src: '/images/1748478055702_IMG-20250528-WA0137.jpg',
       type: 'image',
       alt: 'Projeto de terraplanagem 6'
+    },
+    {
+      src: '/images/1023437936581327.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 7'
+    },
+    {
+      src: '/images/1035010388234718.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 8'
+    },
+    {
+      src: '/images/1200793898004576.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 9'
+    },
+    {
+      src: '/images/1220176202832185.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 10'
+    },
+    {
+      src: '/images/1427294115379653.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 11'
+    },
+    {
+      src: '/images/4069584636606485.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 12'
+    },
+    {
+      src: '/images/4100127376900605.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 13'
+    },
+    {
+      src: '/images/656286994072888.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 14'
+    },
+    {
+      src: '/images/713248957846940.jpeg',
+      type: 'image',
+      alt: 'Projeto de terraplanagem 15'
     }
   ];
 
