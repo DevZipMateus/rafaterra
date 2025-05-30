@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
@@ -135,7 +134,7 @@ const Gallery = () => {
           {mediaItems.map((item, index) => (
             <motion.div
               key={index}
-              className="relative aspect-square bg-slate-100 rounded-lg overflow-hidden cursor-pointer group"
+              className="relative aspect-square bg-[#03499b] rounded-lg overflow-hidden cursor-pointer group"
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.7, delay: 0.1 + index * 0.1 }}
