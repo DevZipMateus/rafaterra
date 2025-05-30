@@ -45,7 +45,7 @@ const Hero = () => {
           }}
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-teal-500/20 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-black/60"></div>
       </div>
 
       <div className="section-container relative z-10 flex flex-col items-center text-center px-4">
@@ -54,7 +54,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-teal-300 bg-teal-900/30 backdrop-blur-sm rounded-full border border-teal-400/30">
+          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-300 bg-blue-900/30 backdrop-blur-sm rounded-full border border-blue-400/30">
             Mais de 6 anos no mercado
           </div>
         </motion.div>
@@ -66,7 +66,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           Terraplanagem e Transporte com{' '}
-          <span className="text-gradient bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">Qualidade e Comprometimento</span>
+          <span className="text-gradient bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Qualidade e Comprometimento</span>
         </motion.h1>
 
         <motion.p
@@ -85,7 +85,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
-          <p className="text-base md:text-lg font-medium text-teal-300 italic">
+          <p className="text-base md:text-lg font-medium text-blue-300 italic">
             "Seriedade, qualidade e Comprometimento... Se Deus é por nós quem será contra nós"
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <a href="#contact" className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200">
+          <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200">
             Solicitar Orçamento
           </a>
           <a href="#services" className="btn-secondary bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">

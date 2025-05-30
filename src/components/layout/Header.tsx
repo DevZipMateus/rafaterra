@@ -48,7 +48,7 @@ const Header = () => {
               </h1>
               <p className={cn(
                 'text-xs md:text-sm transition-colors duration-300',
-                isScrolled ? 'text-slate-600' : 'text-teal-100'
+                isScrolled ? 'text-slate-600' : 'text-blue-100'
               )}>
                 Terraplanagem e Transporte
               </p>
@@ -64,8 +64,8 @@ const Header = () => {
                 className={cn(
                   'nav-link transition-colors duration-300',
                   isScrolled 
-                    ? 'text-slate-700 hover:text-teal-600' 
-                    : 'text-white hover:text-teal-200'
+                    ? 'text-slate-700 hover:text-blue-600' 
+                    : 'text-white hover:text-blue-200'
                 )}
               >
                 {item.label}

@@ -31,19 +31,19 @@ const About = () => {
 
   const features = [
     {
-      icon: <Users className="h-8 w-8 text-teal-500" />,
+      icon: <Users className="h-8 w-8 text-blue-600" />,
       title: 'Missão',
       description:
         'Fornecer serviços de terraplanagem e transporte de alta qualidade que atendam às necessidades dos nossos clientes com eficiência, segurança e compromisso.',
     },
     {
-      icon: <Target className="h-8 w-8 text-teal-500" />,
+      icon: <Target className="h-8 w-8 text-blue-600" />,
       title: 'Visão',
       description:
         'Ser reconhecidos como referência em serviços de terraplanagem e transporte, construindo parcerias duradouras baseadas em confiança, qualidade e resultados.',
     },
     {
-      icon: <BarChart3 className="h-8 w-8 text-teal-500" />,
+      icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
       title: 'Valores',
       description:
         'Seriedade, qualidade e compromisso são os pilares que orientam todas as nossas ações e relacionamentos com nossos clientes.',
@@ -59,7 +59,7 @@ const About = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-teal-600 bg-teal-100 rounded-full">
+          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
             Sobre Nós
           </div>
           <h2 className="section-title">Quem Somos</h2>
@@ -78,7 +78,7 @@ const About = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.1 }}
             >
-              <div className="mb-4 bg-teal-50 w-16 h-16 rounded-lg flex items-center justify-center">
+              <div className="mb-4 bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
