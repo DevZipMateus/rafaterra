@@ -1,7 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,36 +41,47 @@ const Hero = () => {
         <div className="absolute inset-0 opacity-40 bg-[url('/images/pattern.svg')] bg-repeat"></div>
       </div>
 
-      <div className="section-container relative z-10 flex flex-col items-center text-center">
+      <div className="section-container relative z-10 flex flex-col items-center text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
-            Escritório de Contabilidade
+            Mais de 6 anos no mercado
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-5xl"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Soluções Contábeis Personalizadas para o{' '}
-          <span className="text-gradient">Sucesso do Seu Negócio</span>
+          Terraplanagem e Transporte com{' '}
+          <span className="text-gradient">Qualidade e Comprometimento</span>
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-slate-600 max-w-2xl mb-8"
+          className="text-lg md:text-xl text-slate-600 max-w-3xl mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Combinamos experiência e tecnologia para oferecer serviços contábeis eficientes e
-          estratégicos, ajudando sua empresa a crescer e prosperar.
+          Trabalhamos com eficiência e qualidade utilizando caminhões caçamba, mini carregadeira (Bobcat), 
+          retroescavadeira e muito mais para melhor atendê-los.
         </motion.p>
+
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.8, delay: 0.45 }}
+        >
+          <p className="text-base md:text-lg font-medium text-blue-600 italic">
+            "Seriedade, qualidade e Comprometimento... Se Deus é por nós quem será contra nós"
+          </p>
+        </motion.div>
 
         <motion.div
           className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16"
@@ -80,7 +90,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <a href="#contact" className="btn-primary">
-            Agende uma Consulta
+            Solicitar Orçamento
           </a>
           <a href="#services" className="btn-secondary">
             Conheça Nossos Serviços

@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed w-full z-50 transition-all duration-300 ease-in-out py-4',
+        'fixed w-full z-50 transition-all duration-300 ease-in-out py-2',
         isScrolled
           ? 'bg-white/95 backdrop-blur-sm shadow-subtle'
           : 'bg-transparent'
@@ -62,13 +62,25 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="block">
-              <span className="font-display text-2xl font-bold text-blue-600">Contabilidade</span>
+            <a href="#" className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/5f5dba8d-2dcf-409c-8ad2-80de4c84d2ad.png" 
+                alt="RM HELENO TRANSPORTE E LOCAÇÕES" 
+                className="h-12 w-auto object-contain"
+              />
+              <div className="hidden sm:block">
+                <span className="font-display text-lg md:text-xl font-bold text-blue-600">
+                  RM HELENO
+                </span>
+                <div className="text-xs md:text-sm text-slate-600 font-medium">
+                  TRANSPORTE E LOCAÇÕES
+                </div>
+              </div>
             </a>
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-2 items-center">
+          <nav className="hidden lg:flex space-x-2 items-center">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -80,12 +92,12 @@ const Header = () => {
               </a>
             ))}
             <a href="#contact" className="ml-4 btn-primary">
-              Agende uma Consulta
+              Solicitar Orçamento
             </a>
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-blue-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
@@ -105,7 +117,7 @@ const Header = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          'md:hidden transition-all duration-300 ease-bounce-ease overflow-hidden',
+          'lg:hidden transition-all duration-300 ease-bounce-ease overflow-hidden',
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
@@ -126,7 +138,7 @@ const Header = () => {
               className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
               onClick={(e) => scrollToSection(e, '#contact')}
             >
-              Agende uma Consulta
+              Solicitar Orçamento
             </a>
           </div>
         </div>

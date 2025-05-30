@@ -32,7 +32,7 @@ const FloatingButton = () => {
 
   return (
     <a
-      href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20contabilidade."
+      href="https://wa.me/5514997137726?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20terraplanagem%20e%20transporte."
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
@@ -40,7 +40,7 @@ const FloatingButton = () => {
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0',
         isAnimating ? 'animate-bounce' : ''
       )}
-      aria-label="Contato via WhatsApp"
+      aria-label="Contato via WhatsApp - RM HELENO TRANSPORTE E LOCAÇÕES"
     >
       <img 
         src="/lovable-uploads/097a7f34-6632-412c-b133-978b260d795b.png" 
