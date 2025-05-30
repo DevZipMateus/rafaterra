@@ -36,7 +36,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/5f5dba8d-2dcf-409c-8ad2-80de4c84d2ad.png" 
-              alt="RM HELENO TRANSPORTE E LOCAÇÕES" 
+              alt="RAFA TERRA" 
               className="h-10 w-10 md:h-12 md:w-12"
             />
             <div className="hidden sm:block">
@@ -44,13 +44,13 @@ const Header = () => {
                 'text-lg md:text-xl font-bold transition-colors duration-300',
                 isScrolled ? 'text-slate-900' : 'text-white'
               )}>
-                RM HELENO
+                RAFA TERRA
               </h1>
               <p className={cn(
                 'text-xs md:text-sm transition-colors duration-300',
                 isScrolled ? 'text-slate-600' : 'text-blue-100'
               )}>
-                Transporte e Locações
+                Terraplanagem e Transporte
               </p>
             </div>
           </div>

@@ -40,7 +40,7 @@ const FloatingButton = () => {
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0',
         isAnimating ? 'animate-bounce' : ''
       )}
-      aria-label="Contato via WhatsApp - RM HELENO TRANSPORTE E LOCAÇÕES"
+      aria-label="Contato via WhatsApp - RAFA TERRA"
     >
       <img 
         src="/lovable-uploads/097a7f34-6632-412c-b133-978b260d795b.png" 

@@ -11,12 +11,12 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <img 
                   src="/lovable-uploads/5f5dba8d-2dcf-409c-8ad2-80de4c84d2ad.png" 
-                  alt="RM HELENO TRANSPORTE E LOCAÇÕES" 
+                  alt="RAFA TERRA" 
                   className="h-12 w-auto object-contain"
                 />
                 <div>
-                  <h3 className="text-xl font-bold font-display">RM HELENO</h3>
-                  <p className="text-sm text-slate-300">TRANSPORTE E LOCAÇÕES</p>
+                  <h3 className="text-xl font-bold font-display">RAFA TERRA</h3>
+                  <p className="text-sm text-slate-300">TERRAPLANAGEM E TRANSPORTE</p>
                 </div>
               </div>
               <p className="text-slate-300">
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-800 text-slate-400 text-sm text-center">
-          <p>© {new Date().getFullYear()} RM HELENO TRANSPORTE E LOCAÇÕES. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} RAFA TERRA. Todos os direitos reservados.</p>
           <p className="mt-2 italic">"Seriedade, qualidade e Comprometimento... Se Deus é por nós quem será contra nós"</p>
         </div>
       </div>
